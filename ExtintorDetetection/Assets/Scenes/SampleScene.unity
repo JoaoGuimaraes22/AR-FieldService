@@ -946,6 +946,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 537082679}
+  - component: {fileID: 537082680}
   m_Layer: 0
   m_Name: Form
   m_TagString: Untagged
@@ -968,6 +969,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &537082680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537082678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25ce0ff8af95b034faed01ce727294d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myForm: {fileID: 537082678}
 --- !u!1 &575016888
 GameObject:
   m_ObjectHideFlags: 0
@@ -2893,6 +2907,9 @@ GameObject:
   - component: {fileID: 2086239282}
   - component: {fileID: 2086239281}
   - component: {fileID: 2086239283}
+  - component: {fileID: 2086239284}
+  - component: {fileID: 2086239286}
+  - component: {fileID: 2086239285}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -2943,3 +2960,44 @@ MonoBehaviour:
   m_PlanePrefab: {fileID: 5551137197274720205, guid: 04bf8fd482204a74e9e29a7f8017e2e3,
     type: 3}
   m_DetectionMode: -1
+--- !u!114 &2086239284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086239280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b277359747d4d74e80f1a8e308f067b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Form: {fileID: 537082678}
+--- !u!114 &2086239285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086239280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f22d8b5b30b9254990b28f363440db7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Form: {fileID: 537082678}
+--- !u!114 &2086239286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086239280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedLibrary: {fileID: 0}
+  m_MaxNumberOfMovingImages: 0
+  m_TrackedImagePrefab: {fileID: 537082678}
