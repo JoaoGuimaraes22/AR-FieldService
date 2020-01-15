@@ -309,6 +309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 93948462}
   - component: {fileID: 93948461}
+  - component: {fileID: 93948463}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -333,8 +334,8 @@ MonoBehaviour:
   Danos: {fileID: 302988620}
   Localizacao: {fileID: 1562069060}
   Instrucoes: {fileID: 1985308838}
-  debug: {fileID: 0}
-  debugTwo: {fileID: 0}
+  debug: {fileID: 1598921276}
+  debugTwo: {fileID: 1598921276}
 --- !u!4 &93948462
 Transform:
   m_ObjectHideFlags: 0
@@ -349,6 +350,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &93948463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93948460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7e8e460c8629f4192562f8c93b2e16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txt: {fileID: 1598921276}
+  input: {fileID: 1968895574}
+  val: {fileID: 1577749885}
+  dan: {fileID: 302988620}
+  loc: {fileID: 1562069060}
+  instr: {fileID: 1985308838}
 --- !u!1 &165585583
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,6 +1017,7 @@ GameObject:
   m_Component:
   - component: {fileID: 537082679}
   - component: {fileID: 537082680}
+  - component: {fileID: 537082681}
   m_Layer: 0
   m_Name: Form
   m_TagString: Untagged
@@ -1033,6 +1053,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myForm: {fileID: 537082678}
+--- !u!114 &537082681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537082678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7e8e460c8629f4192562f8c93b2e16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txt: {fileID: 1598921276}
+  input: {fileID: 0}
+  val: {fileID: 0}
+  dan: {fileID: 0}
+  loc: {fileID: 0}
+  instr: {fileID: 0}
 --- !u!1 &575016888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,8 +1902,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 93948461}
-        m_MethodName: HandleClick
+      - m_Target: {fileID: 93948463}
+        m_MethodName: ChangeText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2382,7 +2420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 154, y: -253}
+  m_AnchoredPosition: {x: -249, y: -253}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1598921276
@@ -2416,7 +2454,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Data:'
 --- !u!222 &1598921277
 CanvasRenderer:
   m_ObjectHideFlags: 0
