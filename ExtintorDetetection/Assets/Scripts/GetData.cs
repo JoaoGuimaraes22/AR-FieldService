@@ -12,7 +12,7 @@ public class GetData : MonoBehaviour
     public Toggle Localizacao;
     public Toggle Instrucoes;
     public Text debug;
-
+    public Text debugTwo;
     public void HandleClick()
     {
         string comment = _input.text;
@@ -22,6 +22,7 @@ public class GetData : MonoBehaviour
         bool instrucoes = Instrucoes.isOn;
 
         debug.text = $"This is the text now: {comment} {validade.ToString()} {danos.ToString()} {localizacao.ToString()} {instrucoes.ToString()}";
+        debugTwo.text = $"This is the text now: {comment} {validade.ToString()} {danos.ToString()} {localizacao.ToString()} {instrucoes.ToString()}";
 
 
 
